@@ -26,11 +26,11 @@ exports.config = {
     suites: {
         login: [
             './testscripts/tc001_addProductToOrderPage.js',
-            './testscripts/tc001_addProductToOrderPage2.js'
+            './testscripts/tc002_deleteProductFromOrderPage.js'
         ],
         kart: [
-            './testscripts/tc001_addProductToOrderPage3.js',
-            './testscripts/tc001_addProductToOrderPage4.js'
+            './testscripts/tc003_canceltheAddedProduct.js',
+            './testscripts/tc004_continueToShopping.js'
         ],
     },
     
