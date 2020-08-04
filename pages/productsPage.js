@@ -16,7 +16,7 @@ class productsPage {
                 break;
             }
         }
-        browser.pause(8000);
+        browser.pause(15000);
         browser.switchToFrame(0);
         return productDetailPage;
     }
