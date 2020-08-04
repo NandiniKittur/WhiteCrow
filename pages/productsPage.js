@@ -12,12 +12,10 @@ class productsPage {
         for(let i=0;i<=this.productsList.length-1;i++) {
             const href = this.productsList[i].getAttribute("href");
             if(href.includes(productId)){
-                this.productsList[i].click();
+                browser.execute("arguments[0].click()", this.productsList[i]);
                 break;
             }
         }
-        browser.pause(15000);
-        browser.switchToFrame(0);
         return productDetailPage;
     }
 }
